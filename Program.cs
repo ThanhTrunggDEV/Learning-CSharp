@@ -23,14 +23,15 @@ namespace Learning_CSharp
             ForegroundColor = ConsoleColor.Green;
             OutputEncoding = Encoding.UTF8;
             #endregion
-
+            Write("Enter What You Wanna Say (number and special character are invalid): ");
+            string input = ReadLine();
             #region Loading Animation
-                Write("\rProcessing.");
-                Sleep(1000);
-                Write("\rProcessing..");
-                Sleep(1000);
-                Write("\rProcessing...");
-                Sleep(500);
+            Write("\rProcessing.");
+            Sleep(1000);
+            Write("\rProcessing..");
+            Sleep(1000);
+            Write("\rProcessing...");
+            Sleep(500);
             for (int i = 0; i <= 100; i++)
             {
                 Sleep(10);
@@ -44,68 +45,25 @@ namespace Learning_CSharp
             Thread.Sleep(500);
             Clear();
             #endregion
-            string[] letter = new string[100];
-            string listLetter = "";
-            int index = 0;
+            string output = string.Empty;
+            int position = 0;
             while (true)
             {
                 for (char character = 'A'; character <= 'z'; character++)
                 {
                     Sleep(50);
-                    letter[index] = character.ToString();
-                    Write($"\r\n{listLetter}" + letter[index]);
-                    if (character == 'H' && index == 0)
+                    Write("\r\n" + output + character);
+                    if (character == input[position])
                     {
-                        listLetter += character;
-                        index++;
-                       // Write("\n");
+                        output += input[position++];
                     }
-                    if (character == 'e' && index == 1)
+                    else if (input[position] == ' ')
                     {
-                        listLetter += character;
-                        index++;
-                       // Write("\n");
+                        output += " ";
+                        position++;
                     }
-                    if (character == 'l' && index == 2 || character == 'l' && index == 3)
+                    if (position == input.Length)
                     {
-                        listLetter += character;
-                        index++;
-                       // Write("\n");
-                    }
-                    if (character == 'o' && index == 4)
-                    {
-                        listLetter += character + " ";
-                        index+=2;
-                       // Write("\n");
-                    }
-                    if (character == 'W' && index == 6)
-                    {
-                        listLetter += character;
-                        index++;
-                       // Write("\n");
-                    }
-                    if (character == 'o' && index == 7)
-                    {
-                        listLetter += character;
-                        index++;
-                       // Write("\n");
-                    }
-                    if (character == 'r' && index == 8)
-                    {
-                        listLetter += character;
-                        index++;
-                       // Write("\n");
-                    }
-                    if (character == 'l' && index == 9)
-                    {
-                        listLetter += character;
-                        index++;
-                        //Write("\n");
-                    }
-                    if (character == 'd' && index == 10)
-                    {
-                        listLetter += character;
-                        index++;
                         Write("\n");
                         return;
                     }
