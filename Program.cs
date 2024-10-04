@@ -14,25 +14,26 @@ using static System.Console;
 using static System.Threading.Thread;
 namespace Learning_CSharp
 {
- 
     internal class Program
     {
-
         static void Main(string[] args)
         {
             #region Console Figuration
             Title = "This is a console =))";
-            ForegroundColor = ConsoleColor.Magenta;
+            ForegroundColor = ConsoleColor.Green;
             OutputEncoding = Encoding.UTF8;
             #endregion
 
             #region Loading Animation
-            Write("Đang xử lý...");
-            Thread.Sleep(1000);
+                Write("\rProcessing.");
+                Sleep(1000);
+                Write("\rProcessing..");
+                Sleep(1000);
+                Write("\rProcessing...");
+                Sleep(500);
             for (int i = 0; i <= 100; i++)
             {
-                Thread.Sleep(1);
-                //Console.Beep();
+                Sleep(10);
                 Write($"\rLoading {i}%...");
                 if (i == 100)
                 {
@@ -40,80 +41,76 @@ namespace Learning_CSharp
                     Write("\rCompleted");
                 }
             }
-        
             Thread.Sleep(500);
             Clear();
             #endregion
-            string[] s = new string[100];
-            string s1 = "";
-            int id = 0;
+            string[] letter = new string[100];
+            string listLetter = "";
+            int index = 0;
             while (true)
             {
-                for (char c = 'a'; c <= 'z'; c++)
+                for (char character = 'A'; character <= 'z'; character++)
                 {
                     Sleep(50);
-                  
-                    s[id] = c.ToString();
-                    Write($"\r\n{s1}" + s[id]);
-                    if (c == 'h' && id == 0)
+                    letter[index] = character.ToString();
+                    Write($"\r\n{listLetter}" + letter[index]);
+                    if (character == 'H' && index == 0)
                     {
-                        s1 += c;
-                        id++;
+                        listLetter += character;
+                        index++;
                        // Write("\n");
                     }
-                    if (c == 'e' && id == 1)
+                    if (character == 'e' && index == 1)
                     {
-                        s1 += c;
-                        id++;
+                        listLetter += character;
+                        index++;
                        // Write("\n");
                     }
-                    if (c == 'l' && id == 2 || c == 'l' && id == 3)
+                    if (character == 'l' && index == 2 || character == 'l' && index == 3)
                     {
-                        s1 += c;
-                        id++;
+                        listLetter += character;
+                        index++;
                        // Write("\n");
                     }
-                    if (c == 'o' && id == 4)
+                    if (character == 'o' && index == 4)
                     {
-                        s1 += c + " ";
-                        id+=2;
+                        listLetter += character + " ";
+                        index+=2;
                        // Write("\n");
                     }
-                    if (c == 'w' && id == 6)
+                    if (character == 'W' && index == 6)
                     {
-                        s1 += c;
-                        id++;
+                        listLetter += character;
+                        index++;
                        // Write("\n");
                     }
-                    if (c == 'o' && id == 7)
+                    if (character == 'o' && index == 7)
                     {
-                        s1 += c;
-                        id++;
+                        listLetter += character;
+                        index++;
                        // Write("\n");
                     }
-                    if (c == 'r' && id == 8)
+                    if (character == 'r' && index == 8)
                     {
-                        s1 += c;
-                        id++;
+                        listLetter += character;
+                        index++;
                        // Write("\n");
                     }
-                    if (c == 'l' && id == 9)
+                    if (character == 'l' && index == 9)
                     {
-                        s1 += c;
-                        id++;
+                        listLetter += character;
+                        index++;
                         //Write("\n");
                     }
-                    if (c == 'd' && id == 10)
+                    if (character == 'd' && index == 10)
                     {
-                        s1 += c;
-                        id++;
+                        listLetter += character;
+                        index++;
                         Write("\n");
                         return;
                     }
                 }
             }
-            
         }
-       
     }
 }
