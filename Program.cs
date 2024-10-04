@@ -52,7 +52,7 @@ namespace Learning_CSharp
                 for (char c = 'a'; c <= 'z'; c++)
                 {
                     Sleep(50);
-                    Console.WriteLine(c);
+                  
                     s[id] = c.ToString();
                     Write($"\r\n{s1}" + s[id]);
                     if (c == 'h' && id == 0)
