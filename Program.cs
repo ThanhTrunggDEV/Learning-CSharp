@@ -1,28 +1,43 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
-using System.Threading.Tasks;
-using System.IO;
-using System.Collections;
 using System.Threading;
-using System.Runtime.ExceptionServices;
-using System.Reflection;
 using static System.Console;
 using static System.Threading.Thread;
 namespace Learning_CSharp
 {
     internal class Program
     {
+        static void randomColor()
+        {
+            Random random = new Random();
+            int check = random.Next(0, 9);
+            if (check == 0)
+                ForegroundColor = ConsoleColor.Magenta;
+            if (check == 1)
+                ForegroundColor = ConsoleColor.DarkBlue;
+            if (check == 2)
+                ForegroundColor = ConsoleColor.DarkGray;
+            if (check == 3)
+                ForegroundColor = ConsoleColor.DarkGreen;
+            if (check == 4)
+                ForegroundColor = ConsoleColor.DarkCyan;
+            if (check == 5)
+                ForegroundColor = ConsoleColor.DarkRed;
+            if (check == 6)
+                ForegroundColor = ConsoleColor.DarkMagenta;
+            if (check == 7)
+                ForegroundColor = ConsoleColor.DarkYellow;
+            if (check == 8)
+                ForegroundColor = ConsoleColor.Cyan;
+        }
         static void Main(string[] args)
         {
-            #region Console Figuration
-            Title = "This is a console =))";
+            #region Console Configuration
+            Title = "Written And Designed By ThanhTrung";
             ForegroundColor = ConsoleColor.Green;
             OutputEncoding = Encoding.UTF8;
             #endregion
+            
             Write("Enter What You Wanna Say (number and special character are invalid): ");
             string input = ReadLine();
             #region Loading Animation
@@ -52,6 +67,7 @@ namespace Learning_CSharp
                 for (char character = 'A'; character <= 'z'; character++)
                 {
                     Sleep(50);
+                    randomColor();
                     Write("\r\n" + output + character);
                     if (character == input[position])
                     {
