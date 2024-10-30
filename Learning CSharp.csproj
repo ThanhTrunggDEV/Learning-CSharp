@@ -74,24 +74,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BankAccount.cs" />
-    <Compile Include="ManageProduct.cs" />
-    <Compile Include="Option.cs" />
-    <Compile Include="Order.cs" />
-    <Compile Include="ShoppingApp.cs" />
-    <Compile Include="TypeOfProduct.cs" />
-    <Compile Include="Employee.cs" />
-    <Compile Include="Library.cs" />
-    <Compile Include="MaleStudent.cs" />
-    <Compile Include="Product.cs" />
+    <Compile Include="Advanced.cs" />
+    <Compile Include="Just test\Class1.cs" />
+    <Compile Include="Shopping App\ManageProduct.cs" />
+    <Compile Include="Shopping App\Option.cs" />
+    <Compile Include="Shopping App\Order.cs" />
+    <Compile Include="Shopping App\ShoppingApp.cs" />
+    <Compile Include="Shopping App\TypeOfProduct.cs" />
+    <Compile Include="Shopping App\Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ShoppingCart.cs" />
-    <Compile Include="Student.cs" />
+    <Compile Include="Shopping App\ShoppingCart.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
