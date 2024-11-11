@@ -62,7 +62,7 @@ namespace ThanhTrung
         public static void Generate()
         {
             Console.Write("Enter a string: ");
-            string input = Console.ReadLine();
+            string input = ReadLine();
             Loading();
             string output = string.Empty;
             int position = 0;
@@ -72,8 +72,7 @@ namespace ThanhTrung
                 {
                     Sleep(50);
                     randomColor();
-                    Write("\r\n" + output + character);
-                    Title = output;
+                    Write("\r" + output + character);
                     if (character == input[position])
                     {
                         output += input[position++];
