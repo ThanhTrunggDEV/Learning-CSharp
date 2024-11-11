@@ -20,7 +20,7 @@ namespace Decode
        public static string Decode(string input)
         {
             string temp = DecodeUnicodeString(input);
-            byte[] bytes = Encoding.GetEncoding("Windows-1252").GetBytes(temp);
+            byte[] bytes = Encoding.GetEncoding("ISO-8859-1").GetBytes(temp);
             string decodedString = Encoding.UTF8.GetString(bytes);
             return decodedString;
         }

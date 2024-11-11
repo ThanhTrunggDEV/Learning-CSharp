@@ -12,3 +12,41 @@ D:\Coding Space\C#\Learning CSharp\obj\Debug\Learning CSharp.csproj.AssemblyRefe
 D:\Coding Space\C#\Learning CSharp\obj\Debug\Learning CSharp.csproj.CoreCompileInputs.cache
 D:\Coding Space\C#\Learning CSharp\obj\Debug\Learning CSharp.exe
 D:\Coding Space\C#\Learning CSharp\obj\Debug\Learning CSharp.pdb
+D:\Coding Space\C#\Learning CSharp\bin\Debug\Microsoft.Win32.Registry.dll
+D:\Coding Space\C#\Learning CSharp\bin\Debug\NAudio.Asio.dll
+D:\Coding Space\C#\Learning CSharp\bin\Debug\NAudio.Core.dll
+D:\Coding Space\C#\Learning CSharp\bin\Debug\NAudio.dll
+D:\Coding Space\C#\Learning CSharp\bin\Debug\NAudio.Midi.dll
+D:\Coding Space\C#\Learning CSharp\bin\Debug\NAudio.Wasapi.dll
+D:\Coding Space\C#\Learning CSharp\bin\Debug\NAudio.WinForms.dll
+D:\Coding Space\C#\Learning CSharp\bin\Debug\NAudio.WinMM.dll
+D:\Coding Space\C#\Learning CSharp\bin\Debug\System.Security.AccessControl.dll
+D:\Coding Space\C#\Learning CSharp\bin\Debug\System.Security.Principal.Windows.dll
+D:\Coding Space\C#\Learning CSharp\bin\Debug\Microsoft.Win32.Registry.xml
+D:\Coding Space\C#\Learning CSharp\bin\Debug\NAudio.xml
+D:\Coding Space\C#\Learning CSharp\bin\Debug\NAudio.Asio.xml
+D:\Coding Space\C#\Learning CSharp\bin\Debug\NAudio.Core.xml
+D:\Coding Space\C#\Learning CSharp\bin\Debug\NAudio.Midi.xml
+D:\Coding Space\C#\Learning CSharp\bin\Debug\NAudio.Wasapi.xml
+D:\Coding Space\C#\Learning CSharp\bin\Debug\NAudio.WinForms.xml
+D:\Coding Space\C#\Learning CSharp\bin\Debug\NAudio.WinMM.xml
+D:\Coding Space\C#\Learning CSharp\bin\Debug\System.Security.AccessControl.xml
+D:\Coding Space\C#\Learning CSharp\bin\Debug\System.Security.Principal.Windows.xml
+D:\Coding Space\C#\Learning CSharp\obj\Debug\Learning.0E119436.Up2Date
+D:\Coding Space\C#\Learning CSharp\bin\Debug\EPPlus.dll
+D:\Coding Space\C#\Learning CSharp\bin\Debug\EPPlus.Interfaces.dll
+D:\Coding Space\C#\Learning CSharp\bin\Debug\EPPlus.System.Drawing.dll
+D:\Coding Space\C#\Learning CSharp\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+D:\Coding Space\C#\Learning CSharp\bin\Debug\System.Buffers.dll
+D:\Coding Space\C#\Learning CSharp\bin\Debug\System.ComponentModel.Annotations.dll
+D:\Coding Space\C#\Learning CSharp\bin\Debug\System.Memory.dll
+D:\Coding Space\C#\Learning CSharp\bin\Debug\System.Numerics.Vectors.dll
+D:\Coding Space\C#\Learning CSharp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Coding Space\C#\Learning CSharp\bin\Debug\EPPlus.xml
+D:\Coding Space\C#\Learning CSharp\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+D:\Coding Space\C#\Learning CSharp\bin\Debug\System.Buffers.xml
+D:\Coding Space\C#\Learning CSharp\bin\Debug\System.Memory.xml
+D:\Coding Space\C#\Learning CSharp\bin\Debug\System.Numerics.Vectors.xml
+D:\Coding Space\C#\Learning CSharp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Coding Space\C#\Learning CSharp\bin\Debug\xunit.assert.dll
+D:\Coding Space\C#\Learning CSharp\bin\Debug\xunit.assert.xml
