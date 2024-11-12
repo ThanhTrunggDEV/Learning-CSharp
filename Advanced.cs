@@ -50,7 +50,7 @@ namespace ThanhTrung
             Sleep(500);
             for (int i = 0; i <= 100; i++)
             {
-                Sleep(100);
+                Sleep(10);
                 randomColor();
                 Write($"\rLoading {i}% [{process}]");
                 pr[i] = '#';
