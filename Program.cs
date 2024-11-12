@@ -30,12 +30,6 @@ namespace Learning_CSharp
 {
     internal class Program 
     {
-        static int Max(int a, int b)
-        {
-            if (a > b)
-                return a;
-            return b;
-        }
         static void Main(string[] args)
         {
             #region Console Configuration
@@ -43,31 +37,24 @@ namespace Learning_CSharp
             randomColor();
             OutputEncoding = Encoding.UTF8;
             #endregion
-            int t = int.Parse(ReadLine());
-            while(t > 0)
+            Loading();
+            int n = int.Parse(Console.ReadLine());
+            var arr = new int[n];
+            for(int i = 0; i < n; i++)
             {
-                int n = int.Parse(ReadLine());
-                var arr = new int[n];
-                int maxl = 1;
-                for(int i = 0; i < n; i++)
-                {
-                    arr[i] = int.Parse(ReadLine());
-                }
-                int maxtemp = 1;
-                for(int j = 1; j < n; j++)
-                {
-                    if (arr[j - 1] < arr[j])
-                    {
-                        maxtemp++;
-                    }
-                    else
-                    {
-                        maxl = Max(maxl,maxtemp);
-                        maxtemp = 1;
-                    }
-                }
-                t--;
-                WriteLine("\t" + maxl);
+                arr[i] = int.Parse(ReadLine());
+            }
+            int length = 0;
+            var rs = new int[n];
+            for(int i = 0; i < n; i++)
+            {
+                if( arr[i] != 28)
+                    rs[length++] = arr[i];
+            }
+            WriteLine();
+            for(int i = 0; i < length; i++)
+            {
+                Console.WriteLine(rs[i]);
             }
         }
     }

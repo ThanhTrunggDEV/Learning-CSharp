@@ -6,6 +6,7 @@ using static System.Console;
 using static System.Threading.Thread;
 using System.Threading;
 using System.Threading.Tasks;
+using OfficeOpenXml.ConditionalFormatting.Contracts;
 
 namespace ThanhTrung
 {
@@ -44,12 +45,16 @@ namespace ThanhTrung
             Sleep(1000);
             randomColor();
             Write("\rProcessing...");
+            string process = ".....................................................................................................";
+            var pr = process.ToCharArray();
             Sleep(500);
             for (int i = 0; i <= 100; i++)
             {
-                Sleep(10);
+                Sleep(100);
                 randomColor();
-                Write($"\rLoading {i}%...");
+                Write($"\rLoading {i}% [{process}]");
+                pr[i] = '#';
+                process = string.Join("", pr);
                 if (i == 100)
                 {
                     Clear();
