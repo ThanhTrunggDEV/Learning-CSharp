@@ -27,9 +27,11 @@ using Learning_CSharp.Zoo_Management;
 using Xunit;
 using Learning_CSharp.Library_Management_System;
 using Learning_CSharp.Bank_Account_Management_System;
+using Learning_CSharp.Student_Management_System;
+using System.Xml.Schema;
 namespace Learning_CSharp
 {
-    internal class Program 
+    internal class Program
     {
         static void Main(string[] args)
         {
@@ -38,16 +40,32 @@ namespace Learning_CSharp
             randomColor();
             OutputEncoding = Encoding.UTF8;
             #endregion
-            Loading();
-            Bank bank = new Bank();
-            Account account1 = new SavingAccount(10, "00co", 0, "ThanhTrung");
-            Account account2 = new CheckingAccount(5, "6677", 0, "Ryan");
-            bank.AddAccount(account1);
-            bank.AddAccount(account2);
-            bank.Deposit("6677",100000000);
-        //    bank.FindAccount("00co");
+            int n = int.Parse(Console.ReadLine());
+            Random rd = new Random();
+            var arr = new int[n];
+            var arr2 = new int[n];
+            var arr3 = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                arr[i] = rd.Next(100);
+            }
+           
+            Array.Sort(arr);
+            Stopwatch sw = Stopwatch.StartNew();
+            if(Array.BinarySearch(arr, 0, n, 10) >= 0)
+                Console.WriteLine(arr[Array.BinarySearch(arr, 0, n, 10)]);
+            else
+                Console.WriteLine("Not Found");
+            sw.Stop();
+            Console.WriteLine(sw.ElapsedMilliseconds);
 
-            bank.ListBankAccounts();
+            Stopwatch sw2 = Stopwatch.StartNew();
+            if (Algorithms.BinarySearch(arr, 0, n, 10) >= 0)
+                Console.WriteLine(arr[Algorithms.BinarySearch(arr, 0, n, 10)]);
+            else
+                Console.WriteLine("Not Found");
+            sw2.Stop();
+            Console.WriteLine(sw2.ElapsedMilliseconds);
         }
     }
 }

@@ -7,20 +7,34 @@ using System.Threading.Tasks;
 
 namespace Learning_CSharp
 {
-    public class Pro<T>
+    public class Student : IComparer<Student>
     {
-        private T val;
-
-        public T Val { get { return val; } set { val = value; } }
-
-        public Pro() { }
-        public Pro (T val)
+        private string fullName;
+        private int age;
+        public string FullName { get { return fullName; } set { fullName = value; } }
+        public int Age { get { return age; } set { age = value; } }
+        public Student()
         {
-            this.Val = val;
+            FullName = string.Empty;
+            Age = 0;
+        }
+        public Student(string FullName, int Age)
+        {
+            this.Age = Age;
+            this.FullName = FullName;
         }
 
+        public int Compare(Student x, Student y)
+        {
+            if (x.FullName.CompareTo(y.FullName) == 1)
+                return 1;
+            return -1;
 
-
+        }
+        public override string ToString()
+        {
+            return $"Full Name: {FullName} Age: {Age}";
+        }
     }
     public class Pro
     {

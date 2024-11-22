@@ -113,6 +113,10 @@
   <ItemGroup>
     <Compile Include="Advanced.cs" />
     <Compile Include="Algorithms.cs" />
+    <Compile Include="Bank Account Management System\Account.cs" />
+    <Compile Include="Bank Account Management System\Bank.cs" />
+    <Compile Include="Bank Account Management System\Checking Account.cs" />
+    <Compile Include="Bank Account Management System\SavingAccount.cs" />
     <Compile Include="Decoding.cs" />
     <Compile Include="Exercise Part 3.cs" />
     <Compile Include="Extra Homework.cs" />
@@ -131,6 +135,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shopping App\ShoppingCart.cs" />
+    <Compile Include="Student Management System\Class.cs" />
+    <Compile Include="Student Management System\Falcuty.cs" />
+    <Compile Include="Student Management System\Student.cs" />
     <Compile Include="Zoo Management\Animal.cs" />
     <Compile Include="Zoo Management\Interface.cs" />
     <Compile Include="Zoo Management\Specific Animal.cs" />

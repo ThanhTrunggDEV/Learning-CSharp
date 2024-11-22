@@ -58,6 +58,10 @@ namespace Learning_CSharp.Bank_Account_Management_System
             }
             Console.WriteLine("Not Found");
         }
+        public void Transfer(string destinationAccount, string senderAccount, decimal amount)
+        {
+            Console.WriteLine("This function is testing");
+        }
         public void ListBankAccounts()
         {
             foreach(Account bank in listBanks)
