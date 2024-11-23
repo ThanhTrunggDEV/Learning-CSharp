@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
+using Xunit.Sdk;
 
 namespace Learning_CSharp
 {
@@ -106,6 +108,46 @@ namespace Learning_CSharp
                 }
             }
         }
+        public static void InsertionSort(int[] array)
+        {
+            for (int i = 1; i < array.Length - 1; ++i)
+            {
+                int temp = array[i];
+                int pos = i - 1;
+                while(pos >= 0 && temp < array[pos])
+                {
+                    array[pos + 1] = array[pos];
+                    pos--;
+                }
+                array[pos + 1] = temp;
+            }
+        }
+        public static void CountingSort(int[] array)
+        {
+            int[] cnt = new int[100000000];
+            int max = 0;
+            int[] result = new int[array.Length];
+            int length = 0;
+            for(int i = 0;i < array.Length; i++)
+            {
+                max = Math.Max(max, array[i]);
+                if(max > 100000000)
+                {
+                    throw new Exception("Cannot Sort An Array With Max Value > 10^8");
+                }
+                cnt[array[i]]++;
+            }
+            for(int i = 0; i <= max; i++)
+            {
+                while (cnt[i] > 0)
+                {
+                    result[length++] = i;
+                    cnt[i]--;
+                }
+            }
+            Array.Copy(result, array, length);
+        }
+
         public static bool Search(int[] arr, int val)
         {
             foreach(var item in arr)
