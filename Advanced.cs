@@ -7,6 +7,7 @@ using static System.Threading.Thread;
 using System.Threading;
 using System.Threading.Tasks;
 using OfficeOpenXml.ConditionalFormatting.Contracts;
+using System.Windows.Media.Animation;
 
 namespace ThanhTrung
 {
@@ -63,6 +64,21 @@ namespace ThanhTrung
             }
             Thread.Sleep(500);
             Clear();
+        }
+        public static void Heart()
+        {
+            for(float x = 1.5f; x >= -1.5; x -= 0.1f)
+            {
+                for(float y = -1.5f; y <= 1.5; y += 0.1f)
+                {
+                    Sleep(10);
+                    if(Math.Pow(y * y + x * x - 1,3) - Math.Pow(y,2) * Math.Pow(x,3) <= 0.0f)
+                        Console.Write("*");
+                    else
+                        Console.Write(" ");
+                }
+                Console.WriteLine();
+            }
         }
         public static void Generate()
         {
