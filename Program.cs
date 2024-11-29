@@ -44,10 +44,37 @@ namespace Learning_CSharp
             randomColor();
             OutputEncoding = Encoding.UTF8;
             #endregion
-            int n = int.Parse(ReadLine());
-            int[] arr = new int[n];
-            InputRandom(arr);
-            Print(arr);
+            int row = int.Parse(ReadLine());
+            int col = int.Parse(ReadLine());
+            int[,] arr = new int[col, row];
+            int ip = 1;
+            for(int i = 0; i < col; i++)
+            {
+                for(int j = 0; j < row; j++)
+                {
+                    arr[i, j] = ip;
+                    Console.Write(arr[i,j] + " ");
+                }
+                Console.WriteLine();
+            }
+            int k = int.Parse(ReadLine());
+            int t = row - k + 1;
+            if(t > row)
+                t/=row;
+            if (t == row)
+                t = 0;
+            for(int i = 0; i < col;i++)
+            {
+                Console.WriteLine(arr[i, row - k]);
+            }
+            for(int i = 0; i < col; i++)
+            {
+                for(int j = t; j < row; j++)
+                {
+                    Console.WriteLine(arr[j,i]);
+                }
+
+            }
 
         }
     }

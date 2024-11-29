@@ -23,7 +23,6 @@ namespace Learning_CSharp
             this.Age = Age;
             this.FullName = FullName;
         }
-
         public int Compare(Student x, Student y)
         {
             if (x.FullName.CompareTo(y.FullName) == 1)
