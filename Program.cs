@@ -13,29 +13,18 @@ namespace Learning_CSharp
 
     internal class Program
     {
-        public static void InputRandom(int[] arr)
+        struct Student
         {
-            Random rd = new Random();
-            for (int i = 0; i < arr.Length; i++)
+            public int Id;
+            public string Name;
+            public float GPA;
+            public Student(int id, string name, float gpa)
             {
-                arr[i] = rd.Next(101);
+                Id = id;
+                Name = name;
+                GPA = gpa;
             }
-        }
-        public static void Input(int[] arr)
-        {
-            Random rd = new Random();
-            for (int i = 0; i < arr.Length; i++)
-            {
-                arr[i] = int.Parse(ReadLine());
-            }
-        }
-        public static void Print(int[] arr)
-        {
-            foreach (var item in arr)
-            {
-                Console.Write(item + " ");
-            }
-            Console.WriteLine();
+            
         }
         static void Main(string[] args)
         {
@@ -44,38 +33,28 @@ namespace Learning_CSharp
             randomColor();
             OutputEncoding = Encoding.UTF8;
             #endregion
-            int row = int.Parse(ReadLine());
-            int col = int.Parse(ReadLine());
-            int[,] arr = new int[col, row];
-            int ip = 1;
-            for(int i = 0; i < col; i++)
+            List<Student> students = new List<Student>();
+            students.Add(new Student(1, "Thanh Trung", 3.9f));
+            students.Add(new Student(3, "Byan", 3.8f));
+            students.Add(new Student(2, "Cack", 3.7f));
+            students.Add(new Student(4, "Dra", 3.6f));
+            students.Add(new Student(5, "Anh", 3.5f));
+            for(int i = 0; i < students.Count; i++)
             {
-                for(int j = 0; j < row; j++)
+                int minIndex = i;
+                for(int j = i + 1; j < students.Count; j++)
                 {
-                    arr[i, j] = ip;
-                    Console.Write(arr[i,j] + " ");
+                    if (students[minIndex].Name[0] > students[j].Name[0])
+                        minIndex = j;
                 }
-                Console.WriteLine();
+                Student temp = students[minIndex];
+                students[minIndex] = students[i];
+                students[i] = temp;
             }
-            int k = int.Parse(ReadLine());
-            int t = row - k + 1;
-            if(t > row)
-                t/=row;
-            if (t == row)
-                t = 0;
-            for(int i = 0; i < col;i++)
+            foreach (Student student in students)
             {
-                Console.WriteLine(arr[i, row - k]);
+                Console.WriteLine($" ID: {student.Id} Name: {student.Name} GPA: {student.GPA}");
             }
-            for(int i = 0; i < col; i++)
-            {
-                for(int j = t; j < row; j++)
-                {
-                    Console.WriteLine(arr[j,i]);
-                }
-
-            }
-
         }
     }
 }
