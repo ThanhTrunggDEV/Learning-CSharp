@@ -20,16 +20,25 @@ namespace Learning_CSharp
             randomColor();
             OutputEncoding = Encoding.UTF8;
             #endregion
-            Zoo zoo = new Zoo();
-            Animal parrot = new Parrot("Jack",20, "Bird");
-            Animal lion = new Lion("Simba", 10, "Carnivores", false);
-            Animal dolphin = new Dolphin("Leo", 30, "Fish");
-            zoo.AddAnimal(parrot);
-            zoo.AddAnimal(lion);
-            zoo.AddAnimal(dolphin);
-            zoo.DisplayAllAnimals();
-            zoo.HearAnimalSounds();
-            zoo.AnimalAction();
+            List<Vehicle> vehicles = new List<Vehicle>();
+            vehicles.Add(new Car("DT54", "Kia Morning", 10, 4));
+            vehicles.Add(new Motorbike("DT34", "Honda", 5, true));
+            vehicles.Add(new Car("DT55", "BWM", 100, 6));
+            vehicles.Add(new Motorbike("DT35", "Vision", 10, false));
+            vehicles.Add(new Car("DT56", "Mazda", 10, 6));
+            vehicles.Add(new Motorbike("DT36", "Wave", 2, false));
+            vehicles.Add(new Car("DT57", "Lamborgini", 1000, 2));
+            vehicles.Add(new Motorbike("DT37", "Dream", 1, true));
+            VehicalRentalSystem rentalSystem = new VehicalRentalSystem(vehicles);
+            
+            
+            rentalSystem.DisplayVehicles();
+            Console.WriteLine();
+            rentalSystem.Rent("DT57");
+            rentalSystem.Rent("DT56");
+            rentalSystem.Return("DT56");
+            rentalSystem.Rent("DT57");
+            rentalSystem.ListRentedVehicles();
         }
     }
 }
