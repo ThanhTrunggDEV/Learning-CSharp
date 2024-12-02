@@ -191,12 +191,14 @@ namespace Learning_CSharp.Smart_Home_Management
             var Device = Devices.FirstOrDefault(d => d.DeviceID == deviceID);
             if (Device != null)
             {
-                int command = int.Parse(Console.ReadLine());
+
+                
                 Console.WriteLine("Choose Action: ");
                 Console.WriteLine("1: Turn On");
                 Console.WriteLine("2: Turn Off");
                 Console.WriteLine("3: Display Status");
                 Console.WriteLine("4: Cancel");
+                int command = int.Parse(Console.ReadLine());
                 switch (command)
                 {
                     case 1:
