@@ -73,9 +73,9 @@ namespace ThanhTrung
                 {
                     Sleep(10);
                     if(Math.Pow(y * y + x * x - 1,3) - Math.Pow(y,2) * Math.Pow(x,3) <= 0.0f)
-                        Console.Write("*");
+                        Console.Write("+");
                     else
-                        Console.Write(" ");
+                        Console.Write("-");
                 }
                 Console.WriteLine();
             }

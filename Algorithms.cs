@@ -40,7 +40,13 @@ namespace Learning_CSharp
             }
             return true;
         }
-        private static void Swap<T>(ref T val, ref T val2)
+        public static void Swap<T>(T val, T val2)
+        {
+            T temp = val;
+            val = val2;
+            val2 = temp;
+        }
+        public static void Swap<T>( ref T val,ref T val2)
         {
             T temp = val;
             val = val2;
