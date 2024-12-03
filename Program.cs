@@ -8,8 +8,6 @@ using static System.Math;
 using static System.Threading.Thread;
 using static ThanhTrung.Advanced;
 using System.Globalization;
-using Learning_CSharp.Student_Management_System;
-using Learning_CSharp.Smart_Home_Management;
 using Learning_CSharp.Struct_Exercises;
 using System.Data.Common;
 namespace Learning_CSharp
