@@ -23,16 +23,6 @@ namespace Learning_CSharp
             OutputEncoding = Encoding.UTF8;
             #endregion
 
-            TestFraction test = new TestFraction();
-            test.Init();
-            test.Input();
-            Console.WriteLine("Before Operation:");
-            test.OutPut();
-            Console.WriteLine("Inversed: ");
-            test.Inverse();
-            test.OutPut();
-            Console.WriteLine("Largest: ");
-            test.Largerst();
         }
     }
     

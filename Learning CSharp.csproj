@@ -138,7 +138,7 @@
     <Compile Include="Shopping App\ShoppingCart.cs" />
     <Compile Include="Smart Home Management\SmartHome.cs" />
     <Compile Include="Struct Exercises\Exercise3.cs" />
-    <Compile Include="Struct Exercises\HomeWork.cs" />
+    <Compile Include="Struct Exercises\Exercise8.cs" />
     <Compile Include="Student Management System\Class.cs" />
     <Compile Include="Student Management System\Falcuty.cs" />
     <Compile Include="Student Management System\Student.cs" />

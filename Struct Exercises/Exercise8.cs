@@ -7,11 +7,34 @@ using System.Threading.Tasks;
 
 namespace Learning_CSharp.Struct_Exercises
 {
+    //List<Student> students = new List<Student>();
+    //int n = int.Parse(Console.ReadLine());
+    //Manage.AddStudent(students, n);
+    //        Console.WriteLine();
+    //        Manage.PrintStudent(students);
+    //        Console.WriteLine();
+    //        Manage.FindStudent(students);
+    //        Console.WriteLine();
+    //        Manage.SortAverage(students);
+    //        Console.WriteLine("Sorted: ");           // CODE FOR TEST
+    //        Manage.PrintStudent(students);
+    //        Console.WriteLine();
+    //        Manage.SortMathGrade(students);
+    //        Console.WriteLine("Sorted: ");
+    //        Manage.PrintStudent(students);
+    //        Console.WriteLine();
+    //        Manage.PrintStudent3_5(students);
+    //        Console.WriteLine("Oldest: ");
+    //        Manage.OldestStudent(students);
+    //        Console.WriteLine();
+    //        Console.WriteLine("Find by Name: ");
+    //        Manage.FindStudentByName("Nguyen Thanh Trung", students);
+    //        Manage.FindStudentByName("Jack", students);
     public struct Student
     {
         public string studentID;
         public string fullName;
-        public int dateOfBirth;
+        public int yearOfBirth;
         public double mathGrade;
         public double chemicalGrade;
         public double physicsGrade;
@@ -20,7 +43,7 @@ namespace Learning_CSharp.Struct_Exercises
         {
             this.studentID = id;
             this.fullName = fullName;
-            this.dateOfBirth = dateOfBirth;
+            this.yearOfBirth = dateOfBirth;
             this.mathGrade = math;
             this.physicsGrade = physics;
             this.chemicalGrade = chemical;
@@ -31,7 +54,7 @@ namespace Learning_CSharp.Struct_Exercises
         }
         public string GetInfor()
         {
-            return $"ID: {studentID} | Name: {fullName} | Date Of Birth: {dateOfBirth} | Average Grade: {GetAverageGrade()}";
+            return $"ID: {studentID} | Name: {fullName} | Date Of Birth: {yearOfBirth} | Math Score: {mathGrade} | Physics Score: {physicsGrade} | Chemical Score: {chemicalGrade} | Average Grade: {GetAverageGrade()}";
         }
     }
     public struct Manage
@@ -64,11 +87,10 @@ namespace Learning_CSharp.Struct_Exercises
         }
         public static void FindStudent(List<Student> students)
         {
-            double maxScore = 0;
-            Student student = new Student();
+            Student student = students[0];
             foreach (var item in students)
             {
-                if (item.GetAverageGrade() > maxScore)
+                if (item.GetAverageGrade() >= student.GetAverageGrade())
                 {
                     student = item;
                 }
@@ -106,6 +128,38 @@ namespace Learning_CSharp.Struct_Exercises
                 students[i] = students[minIndex];
                 students[minIndex] = temp;
             }
+        }
+        public static void PrintStudent3_5(List<Student> students)
+        {
+            foreach(var student in students)
+            {
+                if(student.GetAverageGrade() > 5 && student.mathGrade >= 3 && student.chemicalGrade >= 3 && student.physicsGrade >= 3)
+                {
+                    Console.WriteLine(student.GetInfor());
+                }
+            }
+        }
+        public static void OldestStudent(List<Student> students)
+        {
+            Student oldestStudent = students[0];
+            foreach (var student in students)
+            {
+                if(student.yearOfBirth <= oldestStudent.yearOfBirth)
+                    oldestStudent = student;
+            }
+            Console.WriteLine(oldestStudent.GetInfor());
+        }
+        public static void FindStudentByName(string name, List<Student> students)
+        {
+            foreach(Student student in students)
+            {
+                if(student.fullName == name)
+                {
+                    Console.WriteLine(student.GetInfor());
+                    return;
+                }
+            }
+            Console.WriteLine($"Not Found Student Named {name}");
         }
     }
 }
