@@ -10,6 +10,8 @@ using static ThanhTrung.Advanced;
 using System.Globalization;
 using Learning_CSharp.Student_Management_System;
 using Learning_CSharp.Smart_Home_Management;
+using Learning_CSharp.Struct_Exercises;
+using System.Data.Common;
 namespace Learning_CSharp
 {
     internal class Program
@@ -22,26 +24,17 @@ namespace Learning_CSharp
             randomColor();
             OutputEncoding = Encoding.UTF8;
             #endregion
-            
-            SmartLight light = new SmartLight("L234","Supper Light");
-            SmartSpeaker smartSpeaker = new SmartSpeaker("S543", "Smart Speaker");
-            SmartThermostat smartThermostat = new SmartThermostat("T345", "Thermo");
-            List<SmartDevice> devices = new List<SmartDevice>();
-            devices.Add(smartSpeaker);
-            devices.Add(smartThermostat);
-            devices.Add(light);
-            ManageDevices test = new ManageDevices(devices);
-            Console.WriteLine("Default Status: ");
-            test.DisplayStatusDevices();
-            Console.WriteLine("Turned on: ");
-            test.TurnOnDevices();
-            test.DisplayStatusDevices();
-            Console.WriteLine("Turned off: ");
-            test.TurnOffDevices();
-            test.DisplayStatusDevices();
-            Console.WriteLine();
-            test.FindAndControl("tre");
-            test.FindAndControl("L234");
+
+            TestFraction test = new TestFraction();
+            test.Init();
+            test.Input();
+            Console.WriteLine("Before Operation:");
+            test.OutPut();
+            Console.WriteLine("Inversed: ");
+            test.Inverse();
+            test.OutPut();
+            Console.WriteLine("Largest: ");
+            test.Largerst();
         }
     }
     
