@@ -126,6 +126,7 @@
     <Compile Include="Library Management System\Interfaces.cs" />
     <Compile Include="Library Management System\Library.cs" />
     <Compile Include="Library Management System\LibraryItem.cs" />
+    <Compile Include="Library System\Name.cs" />
     <Compile Include="OOP_Exercise.cs" />
     <Compile Include="Shopping App\ManageProduct.cs" />
     <Compile Include="Shopping App\Option.cs" />
@@ -138,6 +139,7 @@
     <Compile Include="Shopping App\ShoppingCart.cs" />
     <Compile Include="Smart Home Management\SmartHome.cs" />
     <Compile Include="Struct Exercises\Exercise3.cs" />
+    <Compile Include="Struct Exercises\Exercise6.cs" />
     <Compile Include="Struct Exercises\Exercise8.cs" />
     <Compile Include="Student Management System\Class.cs" />
     <Compile Include="Student Management System\Falcuty.cs" />
