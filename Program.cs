@@ -25,6 +25,13 @@ namespace Learning_CSharp
             OutputEncoding = Encoding.UTF8;
             #endregion
 
+            Complex a = new Complex( 1,2);
+            Complex b = new Complex(1, -2);
+            
+            Console.WriteLine((a+b).GetInfo());
+            Console.WriteLine((a- b).GetInfo());
+            Console.WriteLine((a*b).GetInfo());
+            Console.WriteLine((a/b).GetInfo());
         }
     }
     
