@@ -32,50 +32,18 @@ namespace Learning_CSharp.Struct_Exercises
         }
         public static Fraction operator -(Fraction x, Fraction y)
         {
-            if (x.denominator == y.denominator)
-            {
-                Fraction result = new Fraction(x.numerator - y.numerator, x.denominator);
-                result.Reduction();
-                return result;
-            }
-            int gcd = GCD(x.denominator, y.denominator);
-            if (gcd == 1)
-            {
-                int temp = x.denominator;
-                int temp2 = y.denominator;
-                x.numerator *= temp2;
-                x.denominator *= temp2;
-                y.numerator *= temp;
-                y.denominator *= temp;
-                Fraction result = new Fraction(x.numerator - y.numerator, x.denominator);
-                result.Reduction();
-                return result;
-            }
-            if (x.denominator > y.denominator)
-            {
-                y.numerator *= gcd;
-                y.denominator *= gcd;
-            }
-            else
-            {
-                x.numerator *= gcd;
-                y.denominator *= gcd;
-            }
-            Fraction result2 = new Fraction(x.numerator - y.numerator, x.denominator);
-            result2.Reduction();
-            return result2;
+            int temp = x.denominator;
+            int temp2 = y.denominator;
+            x.numerator *= temp2;
+            x.denominator *= temp2;
+            y.numerator *= temp;
+            y.denominator *= temp;
+            Fraction result = new Fraction(x.numerator - y.numerator, x.denominator);
+           return result.Reduction();
+            
         }
         public static Fraction operator +(Fraction x, Fraction y)
         {
-            if(x.denominator == y.denominator)
-            {
-                Fraction result = new Fraction(x.numerator + y.numerator ,x.denominator);
-                result.Reduction();
-                return result;
-            }
-            int gcd = GCD(x.denominator, y.denominator);
-            if(gcd == 1)
-            {
                 int temp = x.denominator;
                 int temp2 = y.denominator;
                 x.numerator *= temp2;
@@ -83,22 +51,8 @@ namespace Learning_CSharp.Struct_Exercises
                 y.numerator *= temp;
                 y.denominator *= temp;
                 Fraction result = new Fraction(x.numerator + y.numerator, x.denominator);
-                result.Reduction();
-                return result;
-            }
-            if (x.denominator > y.denominator)
-            {
-                y.numerator *= gcd;
-                y.denominator *= gcd;
-            }
-            else
-            {
-                x.numerator *= gcd;
-                y.denominator *= gcd;
-            }
-            Fraction result2 = new Fraction(x.numerator + y.numerator, x.denominator);
-            result2.Reduction();
-            return result2;
+                return result.Reduction();
+      
         }
         public static Fraction operator *(Fraction x, Fraction y)
         {
@@ -114,46 +68,44 @@ namespace Learning_CSharp.Struct_Exercises
         }
         public static bool operator >(Fraction x, Fraction y)
         {
-            if(x.numerator / x.denominator > y.numerator / y.denominator)
+            if(x.numerator * 1.0 / x.denominator * 1.0 > y.numerator * 1.0 / y.denominator * 1.0)
                 return true;
             return false;
         }
         public static bool operator <(Fraction x, Fraction y)
         {
-            if (x.numerator / x.denominator > y.numerator / y.denominator)
+            if (x.numerator * 1.0 / x.denominator * 1.0 > y.numerator * 1.0 / y.denominator * 1.0)
                 return false;
             return true;
         }
         public static bool operator >=(Fraction x, Fraction y)
         {
-            if (x.numerator / x.denominator >= y.numerator / y.denominator)
+            if (x.numerator * 1.0 / x.denominator * 1.0 >= y.numerator * 1.0 / y.denominator * 1.0)
                 return true;
             return false;
         }
         public static bool operator <=(Fraction x, Fraction y)
         {
-            if (x.numerator / x.denominator >= y.numerator / y.denominator)
+            if (x.numerator * 1.0 / x.denominator * 1.0 >= y.numerator * 1.0 / y.denominator * 1.0)
                 return false;
             return true;
         }
         public static bool operator ==(Fraction x, Fraction y)
         {
-            if (x.numerator == y.numerator && x.denominator == y.denominator)
+            if (x.numerator * 1.0 / x.denominator * 1.0 == y.numerator * 1.0 / y.denominator * 1.0)
                 return true;
             return false;
         }
         public static bool operator !=(Fraction x, Fraction y)
         {
-            if (x.numerator != y.numerator || x.denominator == y.denominator)
+            if (x.numerator * 1.0 / x.denominator * 1.0 != y.numerator * 1.0 / y.denominator * 1.0)
                 return true;
             return false;
         }
-        public void Reduction()
+        public Fraction Reduction()
         {
             int gcd = GCD(numerator, denominator);
-            numerator = numerator / gcd;
-            denominator = denominator / gcd;
-            
+            return new Fraction(numerator / gcd, denominator/ gcd);
         }
         public Fraction Inverse()
         {

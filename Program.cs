@@ -12,11 +12,12 @@ using System.Globalization;
 using System.Data.Common;
 using Learning_CSharp.Library_System;
 using Learning_CSharp.Struct_Exercises;
+using System.IO;
 namespace Learning_CSharp
 {
     internal class Program
     {
-        
+
         static void Main(string[] args)
         {
             #region Console Configuration
@@ -25,13 +26,10 @@ namespace Learning_CSharp
             OutputEncoding = Encoding.UTF8;
             #endregion
 
-            Complex a = new Complex( 1,2);
-            Complex b = new Complex(1, -2);
-            
-            Console.WriteLine((a+b).GetInfo());
-            Console.WriteLine((a- b).GetInfo());
-            Console.WriteLine((a*b).GetInfo());
-            Console.WriteLine((a/b).GetInfo());
+            Fraction a = new Fraction(1,2);
+            Fraction b = new Fraction(2,3);
+            Console.WriteLine((a - b).GetData());
+
         }
     }
     

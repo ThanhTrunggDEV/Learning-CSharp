@@ -139,7 +139,10 @@
     <Compile Include="Shopping App\ShoppingCart.cs" />
     <Compile Include="Smart Home Management\SmartHome.cs" />
     <Compile Include="Struct Exercises\Excercise2.cs" />
+    <Compile Include="Struct Exercises\Excercise5.cs" />
     <Compile Include="Struct Exercises\Excercise7.cs" />
+    <Compile Include="Struct Exercises\Exercise1.cs" />
+    <Compile Include="Struct Exercises\Exercise4.cs" />
     <Compile Include="Struct Exercises\Exercise3and10.cs" />
     <Compile Include="Struct Exercises\Exercise6.cs" />
     <Compile Include="Struct Exercises\Exercise8.cs" />
