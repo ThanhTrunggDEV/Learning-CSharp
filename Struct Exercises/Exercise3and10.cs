@@ -57,14 +57,14 @@ namespace Learning_CSharp.Struct_Exercises
         public static Fraction operator *(Fraction x, Fraction y)
         {
             Fraction result = new Fraction(x.numerator * y.numerator, x.denominator * y.denominator);
-            result.Reduction();
-            return result;
+            return result.Reduction();
+            
         }
         public static Fraction operator /(Fraction x, Fraction y)
         {
             Fraction result = new Fraction(x.numerator * y.denominator, x.denominator * y.numerator);
-            result.Reduction();
-            return result;
+            return result.Reduction();
+            
         }
         public static bool operator >(Fraction x, Fraction y)
         {

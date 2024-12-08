@@ -26,9 +26,6 @@ namespace Learning_CSharp
             OutputEncoding = Encoding.UTF8;
             #endregion
 
-            Fraction a = new Fraction(1,2);
-            Fraction b = new Fraction(2,3);
-            Console.WriteLine((a - b).GetData());
 
         }
     }
