@@ -26,7 +26,8 @@ namespace Learning_CSharp
             OutputEncoding = Encoding.UTF8;
             #endregion
 
-
+            ShoppingApp.Init();
+            ShoppingApp.Start();
         }
     }
     
