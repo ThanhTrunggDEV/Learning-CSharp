@@ -25,7 +25,12 @@ namespace Learning_CSharp
             randomColor();
             OutputEncoding = Encoding.UTF8;
             #endregion
-            Ex.Exercise6();
+            StringExercise.Exercise4.Input();
+            //StringExercise.Exercise4.EraseLeftSpace();
+            //StringExercise.Exercise4.EraseRightSpace();
+            //StringExercise.Exercise4.EraseMiddleSpace();
+            //Console.WriteLine(StringExercise.Exercise4.input);
+            StringExercise.Exercise4.isToanSo();
         }
     }
     

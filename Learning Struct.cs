@@ -99,7 +99,7 @@ namespace Learning_CSharp
                 if (s[i] == 'u' || s[i] == 'e' || s[i] == 'o' || s[i] == 'a' || s[i] == 'i'
                  || s[i] == 'U' || s[i] == 'E' || s[i] == 'O' || s[i] == 'A' || s[i] == 'I')
                     vowels++;
-                else// if (s[i] != ' ')
+                else if (s[i] != ' ')
                     consonants++;
             }
             Console.WriteLine($"Number of vowels: {vowels}");
