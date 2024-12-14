@@ -152,6 +152,7 @@
     <Compile Include="Student Management System\Class.cs" />
     <Compile Include="Student Management System\Falcuty.cs" />
     <Compile Include="Student Management System\Student.cs" />
+    <Compile Include="System.cs" />
     <Compile Include="Zoo Management\Animal.cs" />
     <Compile Include="Zoo Management\Interface.cs" />
     <Compile Include="Zoo Management\Specific Animal.cs" />

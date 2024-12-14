@@ -82,7 +82,7 @@ namespace Learning_CSharp.Hospital_Management_System
             Console.WriteLine($"Name: {Name} | Age: {Age} | Address: {Address} | ShiftDuration: {ShiftDuration}");
         }
     }
-    public class Hostpital
+    public class Hospital
     {
         public List<Person> ListPeople {  get; set; } = new List<Person> { };
         public void AddPerson(Person person)
@@ -104,7 +104,7 @@ namespace Learning_CSharp.Hospital_Management_System
         {
             if(ListPeople.FirstOrDefault(x => x.Name == name) != null)
             {
-                Console.WriteLine(ListPeople.FirstOrDefault(x => x.Name == name));
+                Console.WriteLine(ListPeople.First(x => x.Name == name));
             }
             else
                 Console.WriteLine("Not Found");
@@ -114,7 +114,8 @@ namespace Learning_CSharp.Hospital_Management_System
             var list = ListPeople.OfType<T>();
             foreach(var person in list)
             {
-                Console.WriteLine(person.DislayInfo());
+                
+                person.DislayInfo();
             }
         }
     

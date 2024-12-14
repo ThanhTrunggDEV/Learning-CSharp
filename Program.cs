@@ -13,6 +13,8 @@ using System.Data.Common;
 using Learning_CSharp.Library_System;
 using Learning_CSharp.Struct_Exercises;
 using System.IO;
+using Learning_CSharp.Hospital_Management_System;
+using Microsoft.Win32.SafeHandles;
 namespace Learning_CSharp
 {
     internal class Program
@@ -25,12 +27,16 @@ namespace Learning_CSharp
             randomColor();
             OutputEncoding = Encoding.UTF8;
             #endregion
-            StringExercise.Exercise4.Input();
-            //StringExercise.Exercise4.EraseLeftSpace();
-            //StringExercise.Exercise4.EraseRightSpace();
-            //StringExercise.Exercise4.EraseMiddleSpace();
-            //Console.WriteLine(StringExercise.Exercise4.input);
-            StringExercise.Exercise4.isToanSo();
+            Hospital hospital = new Hospital();
+            hospital.AddPerson(new Doctor("Teeth", 10, "Jack", 30, "Ha Noi"));
+            hospital.AddPerson(new Doctor(" ", 10, "Jack", 30, "Ha Noi"));
+            hospital.AddPerson(new Doctor("Teeth", 10, "Jack", 30, "Ha Noi"));
+            hospital.AddPerson(new Doctor("Teeth", 10, "Jack", 30, "Ha Noi"));
+
+            hospital.AddPerson(new Nurse(10, "Lisa", 18, "Nam Dinh"));
+            hospital.AddPerson(new Nurse(10, "Lisa", 18, "Nam Dinh"));
+            hospital.AddPerson(new Nurse(10, "Lisa", 18, "Nam Dinh"));
+            hospital.DisplayPeopleByType<Doctor>();
         }
     }
     
