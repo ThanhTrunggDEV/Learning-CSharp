@@ -8,6 +8,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using OfficeOpenXml.ConditionalFormatting.Contracts;
 using System.Windows.Media.Animation;
+using System.IO;
 
 namespace ThanhTrung
 {
@@ -110,6 +111,53 @@ namespace ThanhTrung
                     }
                 }
             }
+        }
+        public static void ScholarShip()
+        {
+            List<string> list = File.ReadAllLines(@"D:\Downloads\K21.22_ky-1_Lan-1_24-25-_1_ (1).csv").ToList();
+            List<string> newList = new List<string>();
+            foreach (var item in list)
+            {
+                if ((item.Contains("CNTT") || item.Contains("ATTT") || item.Contains("HTTT") || item.Contains("KTPM")))
+                {
+
+                    string[] temp = item.Split(',', '"');
+                    string temp2 = string.Empty;
+                    foreach (var item1 in temp)
+                    {
+                        if (item1 != "")
+                        {
+                            temp2 += item1;
+                            temp2 += " ";
+                        }
+                    }
+                    temp2 = temp2.TrimEnd();
+                    newList.Add(temp2);
+
+                }
+
+            }
+            int cnt = 0;
+
+            foreach (var item in newList)
+            {
+                double score = 0;
+                for (int i = item.Length - 1; i >= 0; i--)
+                {
+                    if (item[i] == ' ')
+                    {
+                        string s = item.Substring(i);
+                        score = double.Parse(s);
+                        break;
+                    }
+                }
+                if (score >= 3.82)
+                {
+                    Console.WriteLine(item);
+                    cnt++;
+                }
+            }
+            Console.WriteLine(cnt);
         }
     }
 }

@@ -15,11 +15,12 @@ using Learning_CSharp.Struct_Exercises;
 using System.IO;
 using Learning_CSharp.Hospital_Management_System;
 using Microsoft.Win32.SafeHandles;
+using System.Linq;
 namespace Learning_CSharp
 {
     internal class Program
     {
-        
+
         static void Main(string[] args)
         {
             #region Console Configuration
@@ -27,16 +28,7 @@ namespace Learning_CSharp
             randomColor();
             OutputEncoding = Encoding.UTF8;
             #endregion
-            Hospital hospital = new Hospital();
-            hospital.AddPerson(new Doctor("Teeth", 10, "Jack", 30, "Ha Noi"));
-            hospital.AddPerson(new Doctor(" ", 10, "Jack", 30, "Ha Noi"));
-            hospital.AddPerson(new Doctor("Teeth", 10, "Jack", 30, "Ha Noi"));
-            hospital.AddPerson(new Doctor("Teeth", 10, "Jack", 30, "Ha Noi"));
-
-            hospital.AddPerson(new Nurse(10, "Lisa", 18, "Nam Dinh"));
-            hospital.AddPerson(new Nurse(10, "Lisa", 18, "Nam Dinh"));
-            hospital.AddPerson(new Nurse(10, "Lisa", 18, "Nam Dinh"));
-            hospital.DisplayPeopleByType<Doctor>();
+            
         }
     }
     

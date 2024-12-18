@@ -115,7 +115,7 @@ namespace Learning_CSharp.Hospital_Management_System
             foreach(var person in list)
             {
                 
-                person.DislayInfo();
+              //  person.DislayInfo();
             }
         }
     
