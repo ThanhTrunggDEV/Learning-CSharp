@@ -18,9 +18,9 @@ using Microsoft.Win32.SafeHandles;
 using System.Linq;
 namespace Learning_CSharp
 {
+    
     internal class Program
     {
-
         static void Main(string[] args)
         {
             #region Console Configuration
@@ -28,8 +28,7 @@ namespace Learning_CSharp
             randomColor();
             OutputEncoding = Encoding.UTF8;
             #endregion
-            
+            Console.WriteLine("Hello You Guys");
         }
     }
-    
 }

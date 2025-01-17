@@ -21,7 +21,7 @@ namespace Learning_CSharp
         private void Option(ref Type type)
         {
 
-            Console.WriteLine("Choose manageProduct type:\n1.Electronics\n2.Food\n3.Clothing\n4.Other ");
+            Console.WriteLine("Choose Product type:\n1.Electronics\n2.Food\n3.Clothing\n4.Other ");
             int option = int.Parse(Console.ReadLine());
             if (option == 1)
                 type = Type.Electronics;
@@ -203,7 +203,7 @@ namespace Learning_CSharp
         }
         public void RemoveProduct()
         {
-            Console.WriteLine("Enter manageProduct name to remove: ");
+            Console.WriteLine("Enter Product name to remove: ");
             string name = Console.ReadLine();
             foreach (Product product in products)
             {
@@ -225,7 +225,7 @@ namespace Learning_CSharp
                     Console.WriteLine(product);
                 }
             }
-            else Console.WriteLine("There is no manageProduct in the stock");
+            else Console.WriteLine("There is no Product in the stock");
         }
     }
 }

@@ -118,7 +118,7 @@ namespace ThanhTrung
             List<string> newList = new List<string>();
             foreach (var item in list)
             {
-                if ((item.Contains("CNTT") || item.Contains("ATTT") || item.Contains("HTTT") || item.Contains("KTPM")))
+                if ((item.Contains("CNTT") || item.Contains("ATTT") || item.Contains("HTTT") || item.Contains("KTPM") || item.Contains("KHMT")))
                 {
 
                     string[] temp = item.Split(',', '"');
@@ -151,7 +151,7 @@ namespace ThanhTrung
                         break;
                     }
                 }
-                if (score >= 3.82)
+                if (score >= 4.0)
                 {
                     Console.WriteLine(item);
                     cnt++;
