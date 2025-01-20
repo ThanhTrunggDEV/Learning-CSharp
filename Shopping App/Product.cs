@@ -40,7 +40,7 @@ namespace Learning_CSharp
             price = 0;
             stockQuantity = 0;
         }
-        public Product(int id, string name, double price, int stockQuantity)
+        public Product(int id = 0, string name = "", double price = 0, int stockQuantity = 0)
         {
             this.id = id;
             this.name = name;

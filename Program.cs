@@ -16,6 +16,7 @@ using System.Linq;
 using OfficeOpenXml.LoadFunctions.Params;
 namespace Learning_CSharp
 {
+    
     internal class Program
     {
         static void Main(string[] args)
@@ -25,6 +26,7 @@ namespace Learning_CSharp
             randomColor();
             OutputEncoding = Encoding.UTF8;
             #endregion
+
             //HinhChuNhat hinhChuNhat = new HinhChuNhat();
             //hinhChuNhat.ChieuDai = float.Parse(Console.ReadLine());
             //hinhChuNhat.ChieuRong = float.Parse(Console.ReadLine());
@@ -45,7 +47,9 @@ namespace Learning_CSharp
             student.EnglishScore = float.Parse(Console.ReadLine());
             student.DisplayInfor();
             student.Cal_AverageScore();
+
+            Console.WriteLine("Hello You Guys");
+
         }
     }
-    
 }
