@@ -94,7 +94,7 @@ namespace ThanhTrung
                 {
                     Sleep(50);
                     randomColor();
-                    Write("\r" + output + character);
+                    Write("\r\n" + output + character);
                     if (character == input[position])
                     {
                         output += input[position++];

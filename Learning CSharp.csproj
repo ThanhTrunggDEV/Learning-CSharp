@@ -120,6 +120,7 @@
     <Compile Include="Decoding.cs" />
     <Compile Include="Exercise Part 3.cs" />
     <Compile Include="Extra Homework.cs" />
+    <Compile Include="Learning At School\Example.cs" />
     <Compile Include="Learning Struct.cs" />
     <Compile Include="Library Management System\Author.cs" />
     <Compile Include="Library Management System\DeriveClasses.cs" />
