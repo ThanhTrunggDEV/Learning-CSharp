@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Coding Space\\C#\\Learning C#\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C3B637FA-9198-4FEB-B552-67BE36CEFBC9}|Learning CSharp.csproj|d:\\coding space\\c#\\learning c#\\learning at school\\example.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3B637FA-9198-4FEB-B552-67BE36CEFBC9}|Learning CSharp.csproj|solutionrelative:learning at school\\example.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3B637FA-9198-4FEB-B552-67BE36CEFBC9}|Learning CSharp.csproj|d:\\coding space\\c#\\learning c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3B637FA-9198-4FEB-B552-67BE36CEFBC9}|Learning CSharp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3B637FA-9198-4FEB-B552-67BE36CEFBC9}|Learning CSharp.csproj|D:\\Coding Space\\C#\\Learning C#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3B637FA-9198-4FEB-B552-67BE36CEFBC9}|Learning CSharp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3B637FA-9198-4FEB-B552-67BE36CEFBC9}|Learning CSharp.csproj|D:\\Coding Space\\C#\\Learning C#\\learning at school\\example.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3B637FA-9198-4FEB-B552-67BE36CEFBC9}|Learning CSharp.csproj|solutionrelative:learning at school\\example.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +18,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Example.cs",
               "DocumentMoniker": "D:\\Coding Space\\C#\\Learning C#\\Learning At School\\Example.cs",
               "RelativeDocumentMoniker": "Learning At School\\Example.cs",
@@ -30,20 +30,20 @@
               "RelativeToolTip": "Learning At School\\Example.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAIwEgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T06:33:11.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-10T06:33:11.128Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Coding Space\\C#\\Learning C#\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Coding Space\\C#\\Learning C#\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAAwIoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T13:48:26.963Z"
+              "WhenOpened": "2024-11-28T13:48:26.963Z",
+              "EditorCaption": ""
             }
           ]
         }
