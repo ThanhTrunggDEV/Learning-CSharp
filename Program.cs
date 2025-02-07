@@ -155,7 +155,15 @@ namespace Learning_CSharp
             randomColor();
             OutputEncoding = Encoding.UTF8;
             #endregion
-            Generate();
+            string s = "[";
+            Random rd = new Random();
+            for(int i = 0; i < 200; i++)
+            {
+                s+= rd.Next(0, 10).ToString();
+                s += ",";
+            }
+            
+            Console.WriteLine(s);
         }
     }
 }

@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Coding Space\\C#\\Learning C#\\",
+  "WorkspaceRootPath": "D:\\Coding Space\\C#\\Learning CSharp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C3B637FA-9198-4FEB-B552-67BE36CEFBC9}|Learning CSharp.csproj|d:\\coding space\\c#\\learning c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C3B637FA-9198-4FEB-B552-67BE36CEFBC9}|Learning CSharp.csproj|D:\\Coding Space\\C#\\Learning CSharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C3B637FA-9198-4FEB-B552-67BE36CEFBC9}|Learning CSharp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3B637FA-9198-4FEB-B552-67BE36CEFBC9}|Learning CSharp.csproj|D:\\Coding Space\\C#\\Learning C#\\learning at school\\example.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C3B637FA-9198-4FEB-B552-67BE36CEFBC9}|Learning CSharp.csproj|D:\\Coding Space\\C#\\Learning CSharp\\learning at school\\example.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C3B637FA-9198-4FEB-B552-67BE36CEFBC9}|Learning CSharp.csproj|solutionrelative:learning at school\\example.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3B637FA-9198-4FEB-B552-67BE36CEFBC9}|Learning CSharp.csproj|d:\\coding space\\c#\\learning csharp\\oop_exercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3B637FA-9198-4FEB-B552-67BE36CEFBC9}|Learning CSharp.csproj|solutionrelative:oop_exercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,29 +22,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OOP_Exercise.cs",
+              "DocumentMoniker": "D:\\Coding Space\\C#\\Learning CSharp\\OOP_Exercise.cs",
+              "RelativeDocumentMoniker": "OOP_Exercise.cs",
+              "ToolTip": "D:\\Coding Space\\C#\\Learning CSharp\\OOP_Exercise.cs",
+              "RelativeToolTip": "OOP_Exercise.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAG0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T15:29:27.314Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Example.cs",
-              "DocumentMoniker": "D:\\Coding Space\\C#\\Learning C#\\Learning At School\\Example.cs",
+              "DocumentMoniker": "D:\\Coding Space\\C#\\Learning CSharp\\Learning At School\\Example.cs",
               "RelativeDocumentMoniker": "Learning At School\\Example.cs",
-              "ToolTip": "D:\\Coding Space\\C#\\Learning C#\\Learning At School\\Example.cs",
+              "ToolTip": "D:\\Coding Space\\C#\\Learning CSharp\\Learning At School\\Example.cs",
               "RelativeToolTip": "Learning At School\\Example.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAIwEgAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T06:33:11.128Z"
+              "WhenOpened": "2025-01-10T06:33:11.128Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Coding Space\\C#\\Learning C#\\Program.cs",
+              "DocumentMoniker": "D:\\Coding Space\\C#\\Learning CSharp\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Coding Space\\C#\\Learning C#\\Program.cs",
+              "ToolTip": "D:\\Coding Space\\C#\\Learning CSharp\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAAwIoAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAkwKQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T13:48:26.963Z",
               "EditorCaption": ""
