@@ -28,21 +28,6 @@ namespace Learning_CSharp
             randomColor();
             OutputEncoding = Encoding.UTF8;
             #endregion
-            Zoo zoo = new Zoo();
-            zoo.AddAnimal(new Lion("Yellow", "Simba", 5));
-            zoo.AddAnimal(new Dog("Black", "Husky", 3));
-            zoo.AddAnimal(new Lion("Red", "Mufasa", 10));
-            zoo.AddAnimal(new Dog("White", "Akita", 2));
-            zoo.AddAnimal(new Lion("Brown", "Scar", 7));
-            zoo.AddAnimal(new Dog("Brown", "Pug", 1));
-            zoo.AddAnimal(new Lion("Black", "Nala", 6));
-            zoo.AddAnimal(new Dog("Yellow", "Golden Retriever", 4));
-            zoo.AddAnimal(new Lion("White", "Sarabi", 8));
-            zoo.AddAnimal(new Dog("Red", "Dalmatian", 5));
-            zoo.AddAnimal(new Lion("Yellow", "Simba", 5));
-            zoo.AddAnimal(new Dog("Black", "Husky", 3));
-            zoo.DisPlay();
-            zoo.Perform();
         }
     }
 }
